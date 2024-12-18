@@ -1,0 +1,11 @@
+.hero {
+  text-align: center;
+  padding: 30px 10px;
+    color: var(--rose);
+}
+
+.hero__title {
+  font-family: "Ultra", serif;
+  color: var(--rose);
+  font-size: 36px;
+}

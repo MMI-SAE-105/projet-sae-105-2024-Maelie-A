@@ -1,0 +1,191 @@
+button,
+input,
+select,
+textarea {
+  appearance: none;
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form__title {
+  font-family: "Ultra", serif;
+  color: var(--violet-);
+  text-align: center;
+  font-size: 28px;
+}
+
+.contact-form__description {
+  text-align: center;
+  font-size: 16px;
+  color: var(--violet-);
+}
+
+.contact-form__label {
+  display: block;
+  margin-top: 20px;
+  font-size: 16px;
+  color: var(--violet-);
+}
+
+.contact-form__input,
+.contact-form__textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid var(--rose-);
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.contact-form__textarea {
+  height: 100px;
+  resize: none;
+}
+
+.contact-form__input:focus,
+.contact-form__textarea:focus {
+  outline: none;
+  border-color: var(--violet-);
+}
+
+.contact-form__button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: var(--violet-);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.boutonpic__b {
+  width: auto;
+  padding: auto;
+  margin-top: 20px;
+  color: white;
+  background-color: var(--violet-);
+  border: none;
+  border-radius: auto;
+  font-size: auto;
+  cursor: pointer;
+  text-align: center;
+
+}
+
+.boutonpic__b2 {
+  width: auto;
+  padding: auto;
+  margin-top: 20px;
+  color: white;
+  background-color: var(--violet-);
+  border: none;
+  border-radius: auto;
+  font-size: auto;
+  cursor: pointer;
+  text-align: center;
+
+}
+
+.boutonpic__b3 {
+  width: auto;
+  padding: auto;
+  margin-top: 20px;
+  color: white;
+  background-color: var(--violet-);
+  border: none;
+  border-radius: auto;
+  font-size: auto;
+  cursor: pointer;
+  text-align: center;
+
+}
+
+
+
+.contact-form__button:hover {
+  background-color: var(--violet-);
+}
+
+.footer {
+  background-color: var(--violet-);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  
+}
+
+
+h2.hero__title {
+  font-family: "Ultra", serif; /* Utilise la police Ultra */
+  color: var(--rose-);
+  background-color: var(--violet-);
+}
+
+p.films-intro__description {
+  font-family: "Ultra", serif; /* Utilise la police Ultra */
+  color: var(--orange-);
+  text-align: center;
+  font-size: 32px;
+}
+
+h3.film__title {
+  font-family: "Ultra", serif; /* Utilise la police Ultra */
+  color: var(--violet-);
+  font-size: 20px;
+  text-align: center;
+}
+
+h2.accroche__title {
+  font-family: "Ultra", serif; /* Utilise la police Ultra */
+  color: var(--violet-);
+  font-size: 32px;
+  text-align: center;
+}
+
+
+h2.date__title {
+  font-family: "Ultra", serif; /* Utilise la police Ultra */
+  text-align: left;
+  color: var(--rose-);
+  font-size: 32px;
+}
+
+h3.schedule__date__web-inspector-hide-shortcut__ {
+  font-family: "Ultra", serif; /* Utilise la police Ultra */
+  color: var(--violet-);
+  font-size: 40px;
+  text-align: center;
+}
+
+h3.schedule__date__ {
+  font-family: "Ultra", serif; /* Utilise la police Ultra */
+  color: var(--violet-);
+  font-size: 20px;
+  text-align: center;
+}
+
+.hero__ptitle {
+  font-family: "Ultra", serif; /* Utilise la police Ultra */
+  color: var(--vert-);
+  font-size: 36px;
+  text-align: center;
+  background-color: var(--violet-);
+}
+
+
+
