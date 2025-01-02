@@ -1,109 +1,100 @@
+/* Footer Global */
 .footer {
-  background-color: var(--violet-);
-  color: #fff;
+  font-family: Arial, sans-serif;
+  color: #1c2d3f;
+  background-image: url(/assets/img/footer.webp);
+  width: 910px;
+  height: 1118px;
+  padding: auto;
   text-align: center;
-  padding: 40px 20px;
 }
 
-.footer__description {
-  font-size: 24px;
+/* Top Section */
+.footer__slogan {
+  font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 20px;
-  font-family: "Ultra", serif;
 }
 
-.footer__social-media {
+.footer__socials {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 30px;
-  margin-bottom: 30px;
-  font-family: "Ultra", serif;
+  gap: 15px;
+  margin-bottom: 20px;
 }
 
-.footer__social-media-title {
-  font-size: 20px;
-  font-weight: bold;
-  margin-right: 10px;
-  font-family: "Ultra", serif;
-}
-
-.footer__social-media-list {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer__social-media-link {
+.footer__social-icon {
   display: inline-block;
-  font-family: "Ultra", serif;
+  width: 24px;
+  height: 24px;
+  background-size: cover;
 }
 
-.footer__social-media-icon {
-  width: 40px;
-  height: 40px;
+.footer__social-icon--instagram {
+  background-image: url("instagram-icon.png");
+}
+.footer__social-icon--pinterest {
+  background-image: url("pinterest-icon.png");
+}
+.footer__social-icon--tiktok {
+  background-image: url("tiktok-icon.png");
+}
+.footer__social-icon--youtube {
+  background-image: url("youtube-icon.png");
 }
 
-.footer__contact-info {
-  margin-bottom: 30px;
-  font-size: 16px;
-  line-height: 1.6;
-  font-family: "Ultra", serif;
+.footer__contact {
+  font-size: 0.9rem;
 }
 
-.footer__contact-info-title {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  font-family: "Ultra", serif;
-}
-
-.footer__contact-info-item {
-  margin-bottom: 10px;
-  font-family: "Ultra", serif;
-}
-
-.footer__contact-info-link {
-  color: #ffffff;
+.footer__contact-link {
+  color: #1c2d3f;
   text-decoration: none;
-  font-family: "Ultra", serif;
+  font-weight: bold;
 }
 
-.footer__contact-info-link:hover {
-  text-decoration: underline;
-  font-family: "Ultra", serif;
+/* Middle Section */
+.footer__middle {
+  margin: 20px 0;
 }
 
-.footer__logo {
-  width: 100px;
-  height: auto;
-  margin: 30px 0;
+.footer__company {
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
-.footer__copyright {
-  color: #ffffff;
-  font-size: 14px;
-  margin-bottom: 10px;
-  font-family: "ABeeZee", sans-serif;
+.footer__image {
+  width: 80px;
+  margin-top: 10px;
 }
 
-.footer__legal {
-  color: #ffffff;
-  font-size: 14px;
-  font-family: "ABeeZee", sans-serif;
+/* Bottom Section */
+.footer__bottom {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 20px;
 }
 
-.footer__legal-link {
-  color: #ffffff;
-  text-decoration: underline;
-  margin: 0 5px;
-  font-family: "ABeeZee", sans-serif;
+.footer__link {
+  text-decoration: none;
+  color: #1c2d3f;
+  background-color: #d9e4ea;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
-.footer__legal-link:hover {
-  color: #ffffff;
-  text-decoration: underline;
-  font-family: "ABeeZee", sans-serif;
+.footer__link:hover {
+  background-color: #b6c4ce;
+}
+
+/* Credits Section */
+.footer__credits {
+  font-size: 0.8rem;
+  color: #707070;
+}
+
+.footer__author {
+  font-weight: bold;
 }

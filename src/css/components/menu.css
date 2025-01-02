@@ -1,154 +1,89 @@
+
 body {
-  font-family: "Unbounded", sans-serif;
+    font-family: "Urbanist", sans-serif; /* Police principale pour le corps du texte */
 }
 
 h1 {
-  font-family: "Ultra", serif; /* Utilise la police Ultra */
-
+    font-family: "Gajraj One", sans-serif; /* Utilise la police Russo One pour h1 */
+    font-weight: 400;
 }
 
 h2 {
-  font-family: "Ultra", serif; /* Utilise la police Ultra */
-
+    font-family: "Gajraj One", sans-serif; /* Utilise la police Gajraj One pour h2 */
+    font-weight: 400;
 }
 
 h3 {
-  font-family: "Ultra", serif; /* Utilise la police Ultra */
+    font-family: "Orbitron", sans-serif; /* Utilise la police Orbitron pour h3 */
+    font-weight: 600; /* Style gras modéré */
 }
 
 p {
-  font-family: "Unbounded", sans-serif; /* Utilise la police Unbounded */
-  font-weight: 400; /* Spécifiez un poids (200 à 900) si nécessaire */
-}
+    font-family: "Urbanist", sans-serif; /* Utilise la police Urbanist pour les paragraphes */
+    font-weight: 400; /* Poids standard */
+    line-height: 1.5; /* Espacement pour améliore la lisibilité */
 
-.menu {
-  visibility: hidden;
+
+/* Style global pour le header */
+.header {
   display: flex;
-  position: fixed;
-  inset: 0;
-  z-index: 1;
-  background-color: var(--violet-);
-  color: white;
   flex-direction: column;
-  justify-content: space-between;
-  font-family: "Ultra", serif;
-
-  transform: translateX(100vw);
-  transition: all 0.3s ease-in-out;
-}
-.menu[aria-hidden="false"] {
-  transform: translateX(0);
-  visibility: visible;
-}
-
-.menu__link {
-  font-family: "Ultra", serif;
-  text-decoration: none;
-  font-size: 24px;
-  text-transform: uppercase;
-  color: var(--rose);
-  display: block;
-  transition: color 0.3s ease;
-}
-
-.menu__list .menu__item:nth-child(1) .menu__link {
-  color: var(--rose-);
-}
-
-.menu__list .menu__item:nth-child(2) .menu__link {
-  color: var(--vert-);
-}
-
-.menu__list .menu__item:nth-child(3) .menu__link {
-  color: var(--orange-);
-}
-
-.menu__list .menu__item:nth-child(4) .menu__link {
-  color: var(--rose-);
-}
-
-.menu__list .menu__item:nth-child(5) .menu__link {
-  color: var(--vert-);
-}
-
-.menu__list .menu__item:nth-child(6) .menu__link {
-  color: var(--orange-);
-}
-
-.menu__link:hover {
-  text-decoration: underline;
-}
-
-.menu-btn {
-  position: relative;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  background: url('assets/img/background.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 20px;
+  color: #002366;
 }
 
-.menu-btn__bar,
-.menu-btn__bar::before,
-.menu-btn__bar::after {
-  content: "";
-  background: var(--rose-);
-  height: 2px;
-  width: 100%;
-  position: absolute;
-  border-radius: 2px;
-  left: 0;
-  z-index: 10;
-  transition: all 0.4s ease-in-out;
+.header__logo-container {
+  margin-bottom: 20px;
 }
 
-.menu-btn__bar::before {
-  top: -10px;
+.header__logo {
+  max-width: 150px;
 }
 
-.menu-btn__bar::after {
-  top: 10px;
-}
-
-/* Technique pour transformer les 3 barres du bouton de menu en croix
-Ne pas oublier d'ajouter une transition plus haut pour l'animation */
-.menu-btn[aria-expanded="true"] .menu-btn__bar,
-.menu-btn[aria-expanded="true"] .menu-btn__bar::before,
-.menu-btn[aria-expanded="true"] .menu-btn__bar::after {
-  transform: rotate(135deg);
-  /* background: var(--white); */
-}
-
-.menu-btn[aria-expanded="true"] .menu-btn__bar::before,
-.menu-btn[aria-expanded="true"] .menu-btn__bar::after {
-  transform: rotate(90deg);
-  top: 0;
-}
-
-.menu-btn__position {
-  top: 0;
-  left: 0;
-  width: 100%;
+/* Style pour le menu */
+.menu {
+  text-align: center;
+  margin-top: 20px;
 }
 
 .menu__list {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  list-style-type: none;
-  padding-top: 130px;
-  margin-left: 20px;
-}
-
-.menu__logo-container {
-  margin-bottom: 40px;
-}
-
-.menu__logo-container img {
-  width: 80px;
-  height: auto;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .menu__item {
-  margin: 10px 0;
+  margin: 15px 0;
+}
+
+.menu__link {
+  font-family: 'Arial', sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+  color: #002366;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu__link:hover {
+  color: #0056b3;
+}
+
+/* Style pour l'image de fond en bas */
+.header__background-image {
+  position: relative;
+  margin-top: 30px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style responsif */
+@media (max-width: 768px) {
+  .menu__link {
+    font-size: 20px;
+  }
 }

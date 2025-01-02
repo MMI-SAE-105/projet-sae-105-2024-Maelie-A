@@ -1,191 +1,134 @@
-button,
-input,
-select,
-textarea {
-  appearance: none;
-  border: none;
-  background: none;
-  outline: none;
-  padding: 0;
-  cursor: pointer;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', 'Urbanist', 'Poppins', sans-serif; /* Ordre des polices */
 }
 
-.contact-form {
-  max-width: 500px;
-  margin: 0 auto;
-  background: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+body {
+    background-color: #fff;
+    color: #1a2e42;
+    font-family: 'Urbanist', sans-serif; /* Choix global */
 }
 
-.contact-form__title {
-  font-family: "Ultra", serif;
-  color: var(--violet-);
-  text-align: center;
-  font-size: 28px;
+/* Titres principaux */
+h1, h2 {
+    font-family: 'Playfair Display', 'Russo One', serif;
 }
 
-.contact-form__description {
-  text-align: center;
-  font-size: 16px;
-  color: var(--violet-);
+/* Boutons */
+button {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
-.contact-form__label {
-  display: block;
-  margin-top: 20px;
-  font-size: 16px;
-  color: var(--violet-);
+/* Logo */
+.logo {
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-.contact-form__input,
-.contact-form__textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border: 2px solid var(--rose-);
-  border-radius: 5px;
-  font-size: 14px;
+/* Icône de langue */
+.lang-icon {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
 }
 
-.contact-form__textarea {
-  height: 100px;
-  resize: none;
+/* Menu burger */
+.burger-menu {
+    font-size: 2em;
+    cursor: pointer;
+    color: #1a2e42;
 }
 
-.contact-form__input:focus,
-.contact-form__textarea:focus {
-  outline: none;
-  border-color: var(--violet-);
+/* Section principale */
+main {
+    text-align: center;
+    padding: 20px;
 }
 
-.contact-form__button {
-  width: 100%;
-  padding: 10px;
-  margin-top: 20px;
-  background-color: var(--violet-);
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
+/* Titre principal */
+h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin: 20px 0;
 }
 
-.boutonpic__b {
-  width: auto;
-  padding: auto;
-  margin-top: 20px;
-  color: white;
-  background-color: var(--violet-);
-  border: none;
-  border-radius: auto;
-  font-size: auto;
-  cursor: pointer;
-  text-align: center;
-
+/* Icône de l'image principale */
+.icon img {
+    width: 80px;
+    margin-bottom: 20px;
 }
 
-.boutonpic__b2 {
-  width: auto;
-  padding: auto;
-  margin-top: 20px;
-  color: white;
-  background-color: var(--violet-);
-  border: none;
-  border-radius: auto;
-  font-size: auto;
-  cursor: pointer;
-  text-align: center;
-
+/* Sous-titres */
+h2 {
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 1.2;
 }
 
-.boutonpic__b3 {
-  width: auto;
-  padding: auto;
-  margin-top: 20px;
-  color: white;
-  background-color: var(--violet-);
-  border: none;
-  border-radius: auto;
-  font-size: auto;
-  cursor: pointer;
-  text-align: center;
-
+h2 span {
+    color: #1a2e42;
+    font-weight: 700;
 }
 
-
-
-.contact-form__button:hover {
-  background-color: var(--violet-);
+.subtitle {
+    margin: 10px 0 30px;
+    color: #555;
+    font-size: 1em;
 }
 
-.footer {
-  background-color: var(--violet-);
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  font-size: 14px;
-  
+/* Formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
-
-h2.hero__title {
-  font-family: "Ultra", serif; /* Utilise la police Ultra */
-  color: var(--rose-);
-  background-color: var(--violet-);
+label {
+    text-align: left;
+    font-weight: 600;
+    color: #1a2e42;
 }
 
-p.films-intro__description {
-  font-family: "Ultra", serif; /* Utilise la police Ultra */
-  color: var(--orange-);
-  text-align: center;
-  font-size: 32px;
+input, textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #1a2e42;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
 }
 
-h3.film__title {
-  font-family: "Ultra", serif; /* Utilise la police Ultra */
-  color: var(--violet-);
-  font-size: 20px;
-  text-align: center;
+input:focus, textarea:focus {
+    border-color: #557a95;
 }
 
-h2.accroche__title {
-  font-family: "Ultra", serif; /* Utilise la police Ultra */
-  color: var(--violet-);
-  font-size: 32px;
-  text-align: center;
+/* Bouton d'envoi */
+button {
+    background-color: #1a2e42;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease-in-out;
 }
 
-
-h2.date__title {
-  font-family: "Ultra", serif; /* Utilise la police Ultra */
-  text-align: left;
-  color: var(--rose-);
-  font-size: 32px;
+button:hover {
+    background-color: #557a95;
 }
 
-h3.schedule__date__web-inspector-hide-shortcut__ {
-  font-family: "Ultra", serif; /* Utilise la police Ultra */
-  color: var(--violet-);
-  font-size: 40px;
-  text-align: center;
-}
-
-h3.schedule__date__ {
-  font-family: "Ultra", serif; /* Utilise la police Ultra */
-  color: var(--violet-);
-  font-size: 20px;
-  text-align: center;
-}
-
-.hero__ptitle {
-  font-family: "Ultra", serif; /* Utilise la police Ultra */
-  color: var(--vert-);
-  font-size: 36px;
-  text-align: center;
-  background-color: var(--violet-);
-}
 
 
 
