@@ -1,104 +1,184 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EcoDenim - L'Avenir du Jean Durable</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Header -->
-     <header class="header">
-        <div class="header__logo-container">
-            <img src="assets/img/logo.webp" alt="Eco Denim Logo" class="header__logo">
-        </div>
-        <nav class="header__nav">
-            <ul class="header__menu">
-                <li class="header__menu-item"><a href="jeaneco.html" class="header__menu-link">Jean Écologique</a></li>
-                <li class="header__menu-item"><a href="film.html" class="header__menu-link">Film</a></li>
-                <li class="header__menu-item"><a href="realisateur.html" class="header__menu-link">Réalisateurs</a></li>
-                <li class="header__menu-item"><a href="gallerie.html" class="header__menu-link">Gallerie</a></li>
-                <li class="header__menu-item"><a href="musique.html" class="header__menu-link">Musique</a></li>
-                <li class="header__menu-item"><a href="livre.html" class="header__menu-link">Livre</a></li>
-                <li class="header__menu-item"><a href="autresprojets.html" class="header__menu-link">autresprojets</a></li>
-                <li class="header__menu-item"><a href="contacts.html" class="header__menu-link">contacts</a></li>
-                <li class="header__menu-item"><a href="apropos.html" class="header__menu-link">apropos</a></li>
-                <li class="header__menu-item"><a href="glossaire.html" class="header__menu-link">Glossaire</a></li>
-                <li class="header__menu-item"><a href="autresprojets.html" class="header__menu-link">autresprojets</a></li>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/img/logoblanc.webp"
+      sizes="192x192"
+    />
+    <script type="module" src="/src/js/script.js"></script>
+  </head>
 
-            </ul>
-        </nav>
+  <body>
+    <header class="header">
+      <div class="header__logo-container">
+        <a href="index.html">
+          <img
+            src="assets/img/logoa.webp"
+            alt="Lionimation logo"
+            class="header__logo-image"
+          />
+        </a>
+      </div>
+
+      <button
+        class="header__menu-btn menu-btn"
+        aria-label="menu"
+        aria-expanded="false"
+        aria-controls="mainNav"
+        class="menu__link"
+      >
+        <span class="menu-btn__bar" aria-hidden="true"></span>
+      </button>
+
+      <nav class="menu" id="mainNav" aria-hidden="true">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="propos.html">A propos</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="programme.html">Programme</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="film.html">Films</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="invite.html">Invités</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="infop.html">Infos pratiques</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="contactus.html">Contact us</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <img src="/assets/img/accueil.webp" alt="Jean Durable" class="hero__image">
-        <h1 class="hero__title">L'Avenir du Jean Durable</h1>
-        <p class="hero__subtitle">Mode Éthique, Impact Positif</p>
-        <blockquote class="hero__quote">"Découvrez comment EcoDenim réinvente le jean pour un futur plus durable et respectueux de l’environnement."</blockquote>
-        <p class="hero__date">Écrit le 20 octobre 2024 à 17h</p>
-        <img src="/assets/img/hoje.webp" alt= "homme" class="hero__arrow">
+      <img
+        src="/assets/img/accueil.webp"
+        alt="Jean Durable"
+        class="hero__image"
+      />
+      <h1 class="hero__title">L'Avenir du Jean Durable</h1>
+      <p class="hero__subtitle">Mode Éthique, Impact Positif</p>
+      <blockquote class="hero__quote">
+        "Découvrez comment EcoDenim réinvente le jean pour un futur plus durable
+        et respectueux de l’environnement."
+      </blockquote>
+      <p class="hero__date">Écrit le 20 octobre 2024 à 17h</p>
+      <img src="/assets/img/hoje.webp" alt="homme" class="hero__arrow" />
     </section>
 
     <!-- Welcome Section -->
     <section class="welcome">
-        <h2 class="welcome__title">Bienvenue sur EcoDenim</h2>
-        <p class="welcome__description">Un site dédié à l'exploration de l'avenir du jean écologique, pour un futur plus vert et durable.</p>
-        <img src="/assets/img/kidsj.webp" alt="Jean Durable" class="welcome__image">
-        <p class="welcome__note">Garçon qui travaille dans la conception de jeans.</p>
-        <p class="welcome__mission">Notre mission : informer et inspirer les consommateurs soucieux de l’environnement en présentant des solutions innovantes pour la production de jeans écoresponsables.</p>
+      <h2 class="welcome__title">Bienvenue sur EcoDenim</h2>
+      <p class="welcome__description">
+        Un site dédié à l'exploration de l'avenir du jean écologique, pour un
+        futur plus vert et durable.
+      </p>
+      <img
+        src="/assets/img/kidsj.webp"
+        alt="Jean Durable"
+        class="welcome__image"
+      />
+      <p class="welcome__note">
+        Garçon qui travaille dans la conception de jeans.
+      </p>
+      <p class="welcome__mission">
+        Notre mission : informer et inspirer les consommateurs soucieux de
+        l’environnement en présentant des solutions innovantes pour la
+        production de jeans écoresponsables.
+      </p>
     </section>
 
     <!-- Projects Section -->
     <section class="projects">
-        <article class="projects__item">
-            <h3 class="projects__title">Jean Écologique</h3>
-            <p class="projects__description">"Le jean écologique : moins de ressources, plus de style. Explorez l’innovation textile respectueuse de la planète."</p>
-            <a href="#" class="projects__link">+ d’info</a>
-        </article>
-        <article class="projects__item">
-            <h3 class="projects__title">Fashion Reimagined</h3>
-            <p class="projects__description">"Découvrez Fashion Reimagined, un documentaire captivant qui dévoile l’avenir de la mode durable."</p>
-            <a href="#" class="projects__link">+ d’info</a>
-        </article>
-        <article class="projects__item">
-            <h3 class="projects__title">Andrew Morgan</h3>
-            <p class="projects__description">"Andrew Morgan, le visionnaire derrière des documentaires qui exposent l’impact caché de la mode rapide."</p>
-            <a href="#" class="projects__link">+ d’info</a>
-        </article>
-        <article class="projects__item">
-            <h3 class="projects__title">Biomimetics for Designers</h3>
-            <p class="projects__description">"Biomimetics for Designers : Quand la nature inspire des solutions durables pour la mode et le design."</p>
-            <a href="#" class="projects__link">+ d’info</a>
-        </article>
-        <article class="projects__item">
-            <h3 class="projects__title">Levi's 501 Commercial Soundtrack</h3>
-            <p class="projects__description">"La bande-son iconique des publicités Levi's 501 : quand la musique façonne l’image intemporelle du jean."</p>
-            <a href="#" class="projects__link">+ d’info</a>
-        </article>
+      <article class="projects__item">
+        <h3 class="projects__title">Jean Écologique</h3>
+        <p class="projects__description">
+          "Le jean écologique : moins de ressources, plus de style. Explorez
+          l’innovation textile respectueuse de la planète."
+        </p>
+        <a href="#" class="projects__link">+ d’info</a>
+      </article>
+      <article class="projects__item">
+        <h3 class="projects__title">Fashion Reimagined</h3>
+        <p class="projects__description">
+          "Découvrez Fashion Reimagined, un documentaire captivant qui dévoile
+          l’avenir de la mode durable."
+        </p>
+        <a href="#" class="projects__link">+ d’info</a>
+      </article>
+      <article class="projects__item">
+        <h3 class="projects__title">Andrew Morgan</h3>
+        <p class="projects__description">
+          "Andrew Morgan, le visionnaire derrière des documentaires qui exposent
+          l’impact caché de la mode rapide."
+        </p>
+        <a href="#" class="projects__link">+ d’info</a>
+      </article>
+      <article class="projects__item">
+        <h3 class="projects__title">Biomimetics for Designers</h3>
+        <p class="projects__description">
+          "Biomimetics for Designers : Quand la nature inspire des solutions
+          durables pour la mode et le design."
+        </p>
+        <a href="#" class="projects__link">+ d’info</a>
+      </article>
+      <article class="projects__item">
+        <h3 class="projects__title">Levi's 501 Commercial Soundtrack</h3>
+        <p class="projects__description">
+          "La bande-son iconique des publicités Levi's 501 : quand la musique
+          façonne l’image intemporelle du jean."
+        </p>
+        <a href="#" class="projects__link">+ d’info</a>
+      </article>
     </section>
 
     <!-- Gallery Section -->
     <section class="gallery">
-        <h2 class="gallery__title">Galerie de films</h2>
-        <p class="gallery__description">"Un tour d’horizon des films incontournables d’Andrew Morgan."</p>
-        <a href="#" class="gallery__link">+ d’info</a>
+      <h2 class="gallery__title">Galerie de films</h2>
+      <p class="gallery__description">
+        "Un tour d’horizon des films incontournables d’Andrew Morgan."
+      </p>
+      <a href="#" class="gallery__link">+ d’info</a>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer__info">
-            <p class="footer__slogan">"Réinventer le jeans pour un avenir plus vert."</p>
-            <p class="footer__contact">Email : <a href="mailto:eco@denim.com" class="footer__link">eco@denim.com</a></p>
-            <p class="footer__contact">Téléphone : <a href="tel:+33128486888" class="footer__link">+33 1 28 48 68 88</a></p>
-            <p class="footer__address">EcoDenim<br>123 Rue de l'Écologie,<br>75001 Paris, France</p>
-        </div>
-        <div class="footer__links">
-            <a href="#" class="footer__link">À propos</a>
-            <a href="#" class="footer__link">Glossaire</a>
-        </div>
-        <p class="footer__credits">ADDARIO Maëlie MMI-1 A2</p>
-        <p class="footer__copyright">&copy; 2024 EcoDenim - projet réalisé en 2024 dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</p>
+      <div class="footer__info">
+        <p class="footer__slogan">
+          "Réinventer le jeans pour un avenir plus vert."
+        </p>
+        <p class="footer__contact">
+          Email :
+          <a href="mailto:eco@denim.com" class="footer__link">eco@denim.com</a>
+        </p>
+        <p class="footer__contact">
+          Téléphone :
+          <a href="tel:+33128486888" class="footer__link">+33 1 28 48 68 88</a>
+        </p>
+        <p class="footer__address">
+          EcoDenim<br />123 Rue de l'Écologie,<br />75001 Paris, France
+        </p>
+      </div>
+      <div class="footer__links">
+        <a href="#" class="footer__link">À propos</a>
+        <a href="#" class="footer__link">Glossaire</a>
+      </div>
+      <p class="footer__credits">ADDARIO Maëlie MMI-1 A2</p>
+      <p class="footer__copyright">
+        &copy; 2024 EcoDenim - projet réalisé en 2024 dans le cadre d’un
+        exercice pédagogique au département MMi de Montbéliard
+      </p>
     </footer>
-</body>
+  </body>
 </html>
