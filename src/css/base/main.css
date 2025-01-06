@@ -1,134 +1,132 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', 'Urbanist', 'Poppins', sans-serif; /* Ordre des polices */
+  margin: 5px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Urbanist", "Poppins", sans-serif; /* Ordre des polices */
 }
 
 body {
-    background-color: #fff;
-    color: #1a2e42;
-    font-family: 'Urbanist', sans-serif; /* Choix global */
+  background-color: #fff;
+  color: #1a2e42;
+  font-family: "Urbanist", sans-serif; /* Choix global */
 }
 
 /* Titres principaux */
-h1, h2 {
-    font-family: 'Playfair Display', 'Russo One', serif;
+h1,
+h2 {
+  font-family: "Playfair Display", "Russo One", serif;
 }
 
 /* Boutons */
 button {
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 600;
-    text-transform: uppercase;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 /* Logo */
 .logo {
-    font-size: 1.5em;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 /* Icône de langue */
 .lang-icon {
-    width: 30px;
-    height: auto;
-    margin-right: 10px;
+  width: 30px;
+  height: auto;
+  margin-right: 10px;
 }
 
 /* Menu burger */
 .burger-menu {
-    font-size: 2em;
-    cursor: pointer;
-    color: #1a2e42;
+  font-size: 2em;
+  cursor: pointer;
+  color: #1a2e42;
 }
 
 /* Section principale */
 main {
-    text-align: center;
-    padding: 20px;
+  text-align: center;
+  padding: 20px;
 }
 
 /* Titre principal */
 h1 {
-    font-size: 3em;
-    font-weight: 700;
-    margin: 20px 0;
+  font-size: 3em;
+  font-weight: 700;
+  margin: 20px 0;
 }
 
 /* Icône de l'image principale */
 .icon img {
-    width: 80px;
-    margin-bottom: 20px;
+  width: 80px;
+  margin-bottom: 20px;
 }
 
 /* Sous-titres */
 h2 {
-    font-size: 2em;
-    font-weight: 600;
-    line-height: 1.2;
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 1.2;
 }
 
 h2 span {
-    color: #1a2e42;
-    font-weight: 700;
+  color: #1a2e42;
+  font-weight: 700;
 }
 
 .subtitle {
-    margin: 10px 0 30px;
-    color: #555;
-    font-size: 1em;
+  margin: 10px 0 30px;
+  color: #555;
+  font-size: 1em;
 }
 
 /* Formulaire */
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 400px;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 label {
-    text-align: left;
-    font-weight: 600;
-    color: #1a2e42;
+  text-align: left;
+  font-weight: 600;
+  color: #1a2e42;
 }
 
-input, textarea {
-    padding: 10px;
-    font-size: 1em;
-    border: 2px solid #1a2e42;
-    border-radius: 5px;
-    outline: none;
-    transition: border-color 0.3s ease-in-out;
+input,
+textarea {
+  padding: 10px;
+  font-size: 1em;
+  border: 2px solid #1a2e42;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
 }
 
-input:focus, textarea:focus {
-    border-color: #557a95;
+input:focus,
+textarea:focus {
+  border-color: #557a95;
 }
 
 /* Bouton d'envoi */
 button {
-    background-color: #fff;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    font-size: 1em;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: 600;
-    text-transform: uppercase;
-    transition: background-color 0.3s ease-in-out;
+  background-color: #fff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease-in-out;
 }
 
 button:hover {
-    background-color: white;
+  background-color: white;
 }
-
-
-
-

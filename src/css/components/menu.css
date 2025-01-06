@@ -129,6 +129,12 @@ Ne pas oublier d'ajouter une transition plus haut pour l'animation */
 
 .menu__logo-container {
   margin-bottom: 40px;
+  position: absolute;
+  top: 14px;
+  right: 65px;
+  width: 38px;
+  height: auto;
+  z-index: 3;
 }
 
 .menu__logo-container img {
