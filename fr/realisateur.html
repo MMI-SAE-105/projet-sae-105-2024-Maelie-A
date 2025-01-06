@@ -1,32 +1,91 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrew Morgan</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Header -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/img/logoblanc.webp"
+      sizes="192x192"
+    />
+    <script type="module" src="/src/js/script.js"></script>
+  </head>
+  <body>
     <header class="header">
-        <div class="header__logo-container">
-            <img src="assets/img/logo.webp" alt="Eco Denim Logo" class="header__logo">
-        </div>
-        <nav class="header__nav">
-            <ul class="header__menu">
-                <li class="header__menu-item"><a href="#introduction" class="header__menu-link">Introduction</a></li>
-                <li class="header__menu-item"><a href="#voice" class="header__menu-link">Une Voix Engagée</a></li>
-                <li class="header__menu-item"><a href="#solutions" class="header__menu-link">La Recherche de Solutions</a></li>
-                <li class="header__menu-item"><a href="#message" class="header__menu-link">Un Message Puissant</a></li>
-                <li class="header__menu-item"><a href="#films" class="header__menu-link">Galerie des Films</a></li>
-            </ul>
-        </nav>
+      <div class="header__logo-container">
+        <a href="accueil.html">
+          <img
+            src="/assets/img/logo1.webp"
+            alt="#"
+            class="header__logo-image"
+          />
+        </a>
+      </div>
+            <div class="header__logo-container-usa">
+        <a href="/en/homepage.html">
+          <img
+            src="/assets/img/usa.webp"
+            alt="#"
+            class="header__logo-image-usa"
+          />
+        </a>
+      </div>
+
+
+      <button
+  class="header__menu-btn menu-btn"
+  aria-label="menu"
+  aria-expanded="false"
+  aria-controls="mainNav"
+>
+  <span class="menu-btn__bar" aria-hidden="true"></span>
+</button>
+<nav class="menu" id="mainNav" aria-hidden="true">
+
+  <ul class="menu__list">
+ 
+          <li class="menu__item">
+            <a class="menu__link" href="jeaneco.html">Jean Écologique</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="film.html">Fashion Reimagined</a>
+          </li>
+           <li class="menu__item">
+            <a class="menu__link" href="realisateur.html">Andrew Morgan</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="gallerie.html">Galerie des Films</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="musique.html">Levi's 501 commercial soundtrack</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="livre.html"> Biomimetics for Designers </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="autresprojets.html">Autres Projets </a>
+          </li>
+           </li>
+          <li class="menu__item">
+            <a class="menu__link" href="contacts.html">Contactez-nous ! </a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
         <h1 class="hero__title">Andrew Morgan</h1>
         <p class="hero__subtitle">Réalisateur</p>
+            <section class="hero">
+      <img
+        src="/assets/img/realisateur.webp"
+        alt="Jean Durable"
+        class="hero__image"
+      />
         <blockquote class="hero__quote">"Réalisateur engagé, Andrew Morgan dévoile les réalités de l'industrie de la mode à travers ses documentaires."</blockquote>
         <p class="hero__date">Écrit le 20 octobre 2024 à 17h</p>
     </section>
@@ -41,7 +100,12 @@
     <!-- Section: Une Voix Engagée -->
     <section class="voice" id="voice">
         <h2 class="voice__title">Une voix engagée pour la mode durable</h2>
-        <img src="assets/img/the-true-cost.webp" alt="The True Cost documentaire" class="voice__image">
+          <section class="hero">
+      <img
+        src="/assets/img/defile.webp"
+        alt="Jean Durable"
+        class="hero__image"
+      />
         <p class="voice__text">Morgan utilise son talent de narrateur pour aborder des sujets difficiles.</p>
         <p class="voice__text">Dans The True Cost, il met en lumière les conditions de travail des ouvriers dans les pays producteurs de textiles, ainsi que les conséquences environnementales de la fast fashion.</p>
         <p class="voice__text">Son objectif est de révéler la véritable histoire derrière les vêtements que nous portons, y compris les jeans, dont la production peut nécessiter jusqu'à 7 500 litres d'eau par unité.</p>
@@ -51,7 +115,12 @@
     <!-- Section: La Recherche de Solutions -->
     <section class="solutions" id="solutions">
         <h2 class="solutions__title">La recherche de solutions</h2>
-        <img src="assets/img/ethical-fashion.webp" alt="Solutions éthiques" class="solutions__image">
+          <section class="hero">
+      <img
+        src="/assets/img/girls.webp"
+        alt="Jean Durable"
+        class="hero__image"
+      />
         <p class="solutions__text">Andrew Morgan ne se contente pas de critiquer l'industrie; il propose également des solutions.</p>
         <p class="solutions__text">Dans ses films, il présente des marques qui adoptent des pratiques éthiques, telles que l'utilisation de coton biologique et de fibres recyclées.</p>
         <p class="solutions__text">Ces alternatives contribuent à réduire l'impact environnemental de la production de jeans, tout en soutenant des conditions de travail équitables.</p>
@@ -61,7 +130,12 @@
     <!-- Section: Un Message Puissant -->
     <section class="message" id="message">
         <h2 class="message__title">Un message puissant</h2>
-        <img src="assets/img/impact.webp" alt="Impact de Andrew Morgan" class="message__image">
+            <section class="hero">
+      <img
+        src="/assets/img/gi.webp"
+        alt="Jean Durable"
+        class="hero__image"
+      />
         <p class="message__text">L'impact de Morgan dépasse le cadre du cinéma.</p>
         <p class="message__text">Grâce à ses films, il parvient à susciter un véritable mouvement autour de la mode durable.</p>
         <p class="message__text">Les consommateurs prennent conscience de l'importance de leurs choix vestimentaires et de l'influence qu'ils peuvent avoir sur l'industrie.</p>
@@ -72,7 +146,12 @@
     <!-- Section: Galerie des Films -->
     <section class="films" id="films">
         <h2 class="films__title">Galerie des Films</h2>
-        <img src="assets/img/true-cost-poster.webp" alt="Poster de The True Cost" class="films__image">
+           <section class="hero">
+      <img
+        src="/assets/img/ttc.webp"
+        alt="Jean Durable"
+        class="hero__image"
+      />
         <p class="films__text">Andrew Morgan est un pionnier dans la promotion d'une mode éthique et durable.</p>
         <p class="films__text">Ses documentaires, notamment The True Cost, ont éveillé les consciences sur les enjeux environnementaux et sociaux de l'industrie textile.</p>
         <p class="films__text">En mettant en avant des solutions concrètes, il inspire les consommateurs à choisir des marques qui adoptent des pratiques responsables, notamment dans la production de jeans.</p>

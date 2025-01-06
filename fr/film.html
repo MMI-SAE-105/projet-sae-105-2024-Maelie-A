@@ -1,27 +1,79 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fashion Reimagined</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Header -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/img/logoblanc.webp"
+      sizes="192x192"
+    />
+    <script type="module" src="/src/js/script.js"></script>
+  </head>
+  <body>
     <header class="header">
-        <div class="header__logo-container">
-            <img src="assets/img/logo.webp" alt="Eco Denim Logo" class="header__logo">
-        </div>
-        <nav class="header__nav">
-            <ul class="header__menu">
-                <li class="header__menu-item"><a href="#film" class="header__menu-link">Film</a></li>
-                <li class="header__menu-item"><a href="#production" class="header__menu-link">Repenser la Production</a></li>
-                <li class="header__menu-item"><a href="#solutions" class="header__menu-link">Solutions Écoresponsables</a></li>
-                <li class="header__menu-item"><a href="#innovations" class="header__menu-link">Innovations</a></li>
-                <li class="header__menu-item"><a href="#circulaire" class="header__menu-link">Mode Circulaire</a></li>
-                <li class="header__menu-item"><a href="#contact" class="header__menu-link">Contact</a></li>
-            </ul>
-        </nav>
+      <div class="header__logo-container">
+        <a href="accueil.html">
+          <img
+            src="/assets/img/logo1.webp"
+            alt="#"
+            class="header__logo-image"
+          />
+        </a>
+      </div>
+            <div class="header__logo-container-usa">
+        <a href="/en/homepage.html">
+          <img
+            src="/assets/img/usa.webp"
+            alt="#"
+            class="header__logo-image-usa"
+          />
+        </a>
+      </div>
+
+
+      <button
+  class="header__menu-btn menu-btn"
+  aria-label="menu"
+  aria-expanded="false"
+  aria-controls="mainNav"
+>
+  <span class="menu-btn__bar" aria-hidden="true"></span>
+</button>
+<nav class="menu" id="mainNav" aria-hidden="true">
+
+  <ul class="menu__list">
+ 
+          <li class="menu__item">
+            <a class="menu__link" href="jeaneco.html">Jean Écologique</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="film.html">Fashion Reimagined</a>
+          </li>
+           <li class="menu__item">
+            <a class="menu__link" href="realisateur.html">Andrew Morgan</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="gallerie.html">Galerie des Films</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="musique.html">Levi's 501 commercial soundtrack</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="livre.html"> Biomimetics for Designers </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="autresprojets.html">Autres Projets </a>
+          </li>
+           </li>
+          <li class="menu__item">
+            <a class="menu__link" href="contacts.html">Contactez-nous ! </a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Hero Section -->
@@ -30,7 +82,12 @@
         <p class="hero__subtitle">Film - 2022 ‧ Documentaire ‧ 1h 40m</p>
         <blockquote class="hero__quote">"Un documentaire révélateur sur l'avenir de la mode durable et les créateurs qui la réinventent."</blockquote>
         <p class="hero__date">Écrit le 20 octobre 2024 à 17h</p>
-        <img src="assets/img/fashion-reimagined-poster.webp" alt="Affiche du film Fashion Reimagined" class="hero__image">
+            <section class="hero">
+      <img
+        src="/assets/img/affichef.webp"
+        alt="Jean Durable"
+        class="hero__image"
+      />
     </section>
 
     <!-- Section: Film Details -->
@@ -43,6 +100,12 @@
     <!-- Section: Repenser la Production -->
     <section class="production">
         <h2 class="production__title">Repenser la Production</h2>
+            <section class="hero">
+      <img
+        src="/assets/img/bd.webp"
+        alt="Jean Durable"
+        class="hero__image"
+      />
         <p class="production__description">Le film illustre à quel point la mode traditionnelle, en particulier la production de jeans, consomme d'énormes quantités d'eau.</p>
         <p class="production__stats">En moyenne, il faut environ 7 500 litres d'eau pour fabriquer un seul jean, un chiffre alarmant dans un monde où l'eau se fait rare.</p>
         <p class="production__action">Pour répondre à ces défis, les créateurs doivent explorer des méthodes alternatives qui réduisent cette empreinte écologique.</p>
@@ -51,7 +114,12 @@
     <!-- Section: Solutions Écoresponsables -->
     <section class="solutions">
         <h2 class="solutions__title">Des solutions écoresponsables pour le jean</h2>
-        <img src="assets/img/coton-biologique.webp" alt="Image champs de cotons" class="solutions__image">
+            <section class="hero">
+      <img
+        src="/assets/img/conton.webp"
+        alt="Jean Durable"
+        class="hero__image"
+      />
         <p class="solutions__description">Dans cet esprit, de nombreuses marques de denim se tournent vers des matières plus durables, comme le coton biologique.</p>
         <p class="solutions__description">Ce dernier est cultivé sans pesticides, préservant ainsi les sols et la biodiversité.</p>
         <p class="solutions__description">En outre, il nécessite moins d’eau pour sa culture, ce qui contribue à réduire l’impact environnemental de la production de jeans.</p>
@@ -60,7 +128,12 @@
     <!-- Section: Innovations dans la Teinture -->
     <section class="innovations">
         <h2 class="innovations__title">Innovations dans la teinture</h2>
-        <img src="assets/img/teinture-ecoresponsable.webp" alt="Indigo: Une teinture respectueuse de l’environnement" class="innovations__image">
+           <section class="hero">
+      <img
+        src="/assets/img/bleu.webp"
+        alt="Jean Durable"
+        class="hero__image"
+      />
         <p class="innovations__description">Fashion Reimagined aborde également les innovations en matière de teinture.</p>
         <p class="innovations__description">Les procédés traditionnels de teinture des jeans utilisent des produits chimiques nocifs et consomment de grandes quantités d'eau.</p>
         <p class="innovations__description">Des techniques émergent, telles que les teintures à base d'eau ou les pigments naturels, qui minimisent l'impact sur l'environnement.</p>
@@ -69,8 +142,19 @@
     <!-- Section: Mode Circulaire -->
     <section class="circulaire">
         <h2 class="circulaire__title">Vers une mode circulaire</h2>
-        <img src="assets/img/make-better-fashion-choices.webp" alt="Make Better Fashion Choices" class="circulaire__image">
+          <section class="hero">
+      <img
+        src="/assets/img/citation.webp"
+        alt="Jean Durable"
+        class="hero__image"
+      />
         <p class="circulaire__description">Le film met également en avant la notion de mode circulaire, qui privilégie la réutilisation et le recyclage des vêtements.</p>
+            <section class="hero">
+      <img
+        src="/assets/img/duo.webp"
+        alt="Jean Durable"
+        class="hero__image"
+      />
         <p class="circulaire__description">Dans le secteur du jean, certaines marques adoptent des programmes de recyclage, permettant aux consommateurs de rapporter leurs vieux jeans pour les transformer en nouveaux produits ou en isolants écologiques.</p>
         <p class="circulaire__description">Cela prolonge la durée de vie des jeans et limite les déchets textiles, répondant ainsi à la demande croissante pour une mode plus responsable.</p>
     </section>

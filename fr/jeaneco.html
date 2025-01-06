@@ -1,34 +1,91 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoDenim - Jean Écologique</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Header -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/img/logoblanc.webp"
+      sizes="192x192"
+    />
+    <script type="module" src="/src/js/script.js"></script>
+  </head>
+  <body>
     <header class="header">
-        <div class="header__logo-container">
-            <img src="assets/img/logo.webp" alt="Eco Denim Logo" class="header__logo">
-        </div>
-        <nav class="header__nav">
-            <ul class="header__menu">
-                <li class="header__menu-item"><a href="#jean-ecologique" class="header__menu-link">Jean Écologique</a></li>
-                <li class="header__menu-item"><a href="#coton-biologique" class="header__menu-link">Coton Biologique</a></li>
-                <li class="header__menu-item"><a href="#fibres-recyclees" class="header__menu-link">Fibres Recyclées</a></li>
-                <li class="header__menu-item"><a href="#teinture" class="header__menu-link">Teinture</a></li>
-                <li class="header__menu-item"><a href="#reutilisation" class="header__menu-link">Réutilisation</a></li>
-                <li class="header__menu-item"><a href="#evolution-jean" class="header__menu-link">Évolution du Jean</a></li>
-                <li class="header__menu-item"><a href="#contact" class="header__menu-link">Contact</a></li>
-            </ul>
-        </nav>
+      <div class="header__logo-container">
+        <a href="accueil.html">
+          <img
+            src="/assets/img/logo1.webp"
+            alt="#"
+            class="header__logo-image"
+          />
+        </a>
+      </div>
+            <div class="header__logo-container-usa">
+        <a href="/en/homepage.html">
+          <img
+            src="/assets/img/usa.webp"
+            alt="#"
+            class="header__logo-image-usa"
+          />
+        </a>
+      </div>
+
+
+      <button
+  class="header__menu-btn menu-btn"
+  aria-label="menu"
+  aria-expanded="false"
+  aria-controls="mainNav"
+>
+  <span class="menu-btn__bar" aria-hidden="true"></span>
+</button>
+<nav class="menu" id="mainNav" aria-hidden="true">
+
+  <ul class="menu__list">
+ 
+          <li class="menu__item">
+            <a class="menu__link" href="jeaneco.html">Jean Écologique</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="film.html">Fashion Reimagined</a>
+          </li>
+           <li class="menu__item">
+            <a class="menu__link" href="realisateur.html">Andrew Morgan</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="gallerie.html">Galerie des Films</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="musique.html">Levi's 501 commercial soundtrack</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="livre.html"> Biomimetics for Designers </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="autresprojets.html">Autres Projets </a>
+          </li>
+           </li>
+          <li class="menu__item">
+            <a class="menu__link" href="contacts.html">Contactez-nous ! </a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
         <h1 class="hero__title">Jean Écologique</h1>
         <p class="hero__subtitle">Mode Éthique, Impact Positif</p>
+            <section class="hero">
+      <img
+        src="/assets/img/jvege.webp"
+        alt="Jean Durable"
+        class="hero__image"
+      />
         <blockquote class="hero__quote">"Le jean écologique, c'est allier style et respect de la planète. Explorez les innovations qui transforment l’industrie."</blockquote>
         <p class="hero__date">Écrit le 20 octobre 2024 à 17h</p>
     </section>
@@ -36,6 +93,12 @@
     <!-- Section: Jean Écoresponsable -->
     <section class="ecoresponsable">
         <h2 class="ecoresponsable__title">Le jean écoresponsable : vers une mode plus durable</h2>
+            <section class="hero">
+      <img
+        src="/assets/img/kidsj.webp"
+        alt="Jean Durable"
+        class="hero__image"
+      />
         <p class="ecoresponsable__description">Le jean, pièce iconique de la mode, est également l'une des plus polluantes.</p>
         <p class="ecoresponsable__stats">La fabrication d’un seul jean nécessite environ 7 500 litres d’eau, un chiffre alarmant alors que la demande mondiale continue d’augmenter.</p>
         <p class="ecoresponsable__action">Face à cette réalité, l’industrie du denim s’oriente vers des méthodes de production plus respectueuses de l’environnement.</p>
@@ -44,7 +107,13 @@
     <!-- Section: Coton Biologique -->
     <section class="coton">
         <h2 class="coton__title">Le coton biologique : une alternative durable</h2>
-        <img src="assets/img/champs-coton.webp" alt="Image champs de coton" class="coton__image">
+            <section class="hero">
+      <img
+        src="/assets/img/conton.webp"
+        alt="Jean Durable"
+        class="hero__image"
+      />
+   
         <p class="coton__description">Le coton conventionnel, utilisé pour la majorité des jeans, requiert d'importantes quantités d’eau et de pesticides.</p>
         <p class="coton__description">Le coton biologique, en revanche, est cultivé sans produits chimiques et consomme moins d’eau, offrant ainsi une solution plus respectueuse de la planète.</p>
         <p class="coton__description">Cette approche permet de préserver les écosystèmes tout en réduisant l'empreinte hydrique de chaque jean.</p>
@@ -53,7 +122,12 @@
     <!-- Section: Fibres Recyclées -->
     <section class="fibres">
         <h2 class="fibres__title">Les fibres recyclées : une solution efficace</h2>
-        <img src="assets/img/fibres-recyclees.webp" alt="Fast Fashion et déchets" class="fibres__image">
+    <section class="hero">
+      <img
+        src="/assets/img/pollution.webp"
+        alt="Jean Durable"
+        class="hero__image"
+      />
         <p class="fibres__description">Les fibres recyclées, provenant de vieux vêtements ou de chutes de production, permettent de réduire l'utilisation de ressources neuves.</p>
         <p class="fibres__description">Cette pratique, intégrée dans une économie circulaire, diminue les déchets textiles et contribue à un usage plus durable des matières premières.</p>
     </section>
@@ -61,7 +135,12 @@
     <!-- Section: Teinture Écoresponsable -->
     <section class="teinture">
         <h2 class="teinture__title">Des procédés de teinture écoresponsables</h2>
-        <img src="assets/img/teinture-ecoresponsable.webp" alt="Indigo respectueux de l’environnement" class="teinture__image">
+    <section class="hero">
+      <img
+        src="/assets/img/bleu.webp"
+        alt="Jean Durable"
+        class="hero__image"
+      />
         <p class="teinture__description">Les teintures traditionnelles du denim sont connues pour leur forte consommation d’eau et leurs rejets chimiques.</p>
         <p class="teinture__description">Aujourd’hui, des solutions innovantes comme les teintures à base d’eau ou les pigments naturels permettent de minimiser l'impact environnemental des procédés de coloration.</p>
     </section>
@@ -69,9 +148,20 @@
     <!-- Section: Encourager la Réutilisation -->
     <section class="reutilisation">
         <h2 class="reutilisation__title">Encourager la réutilisation</h2>
-        <img src="assets/img/reutilisation.webp" alt="Recyclage: les jeans transformés en matériau d’isolation" class="reutilisation__image">
+           <section class="hero">
+      <img
+        src="/assets/img/entreprise.webp"
+        alt="Jean Durable"
+        class="hero__image"
+      />
         <p class="reutilisation__description">Certaines marques s'engagent dans des programmes de recyclage, invitant les consommateurs à rapporter leurs anciens jeans pour les transformer en nouveaux articles ou en matériaux d’isolation.</p>
         <p class="reutilisation__description">Ce modèle encourage la réduction des déchets tout en prolongeant la durée de vie des vêtements.</p>
+            <section class="hero">
+      <img
+        src="/assets/img/jia.webp"
+        alt="Jean Durable"
+        class="hero__image"
+      />
     </section>
 
     <!-- Section: Évolution du Jean -->
