@@ -1,10 +1,13 @@
 * {
-  margin: 5px;
+  margin: 0px;
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", "Urbanist", "Poppins", sans-serif; /* Ordre des polices */
 }
+div.footer__content {
+  margin: 38px;
 
+}
 body {
   background-color: #fff;
   color: #1a2e42;
