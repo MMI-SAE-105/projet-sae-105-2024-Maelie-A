@@ -1,89 +1,145 @@
-
-body {
-    font-family: "Urbanist", sans-serif; /* Police principale pour le corps du texte */
-}
-
 h1 {
-    font-family: "Gajraj One", sans-serif; /* Utilise la police Russo One pour h1 */
-    font-weight: 400;
+  font-family: "Gajraj One", serif;
 }
 
 h2 {
-    font-family: "Gajraj One", sans-serif; /* Utilise la police Gajraj One pour h2 */
-    font-weight: 400;
+  font-family: "Russo One", serif;
 }
 
 h3 {
-    font-family: "Orbitron", sans-serif; /* Utilise la police Orbitron pour h3 */
-    font-weight: 600; /* Style gras modéré */
+  font-family: "Orbitron", serif;
 }
 
 p {
-    font-family: "Urbanist", sans-serif; /* Utilise la police Urbanist pour les paragraphes */
-    font-weight: 400; /* Poids standard */
-    line-height: 1.5; /* Espacement pour améliore la lisibilité */
-
-
-/* Style global pour le header */
-.header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: url('assets/img/background.jpg') no-repeat center center;
-  background-size: cover;
-  padding: 20px;
-  color: #002366;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 400;
 }
 
-.header__logo-container {
-  margin-bottom: 20px;
+.header__logo-image-usa {
+position: absolute;
+  top: 14px;
+  right: 65px;
+  width: 38px;
+  height: auto;
+  z-index: 3;
 }
 
-.header__logo {
-  max-width: 150px;
-}
-
-/* Style pour le menu */
 .menu {
-  text-align: center;
-  margin-top: 20px;
-}
+  visibility: hidden;
+  display: flex;
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  background-image: url("/assets/img/menu.webp"); /* Chemin vers l'image */
+  background-size: cover; /* L'image couvre tout l'écran */
+  background-repeat: no-repeat; /* Pas de répétition de l'image */
+  background-position: center; /* L'image est centrée */
 
-.menu__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+  color: white;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Ultra", serif;
 
-.menu__item {
-  margin: 15px 0;
+  transform: translateX(100vw);
+  transition: all 0.3s ease-in-out;
+}
+.menu[aria-hidden="false"] {
+  transform: translateX(0);
+  visibility: visible;
 }
 
 .menu__link {
-  font-family: 'Arial', sans-serif;
-  font-size: 24px;
+  font-family: "Gajraj One", serif;
   text-decoration: none;
-  color: #002366;
-  font-weight: bold;
-  transition: color 0.3s;
+  font-size: 17px; /* Réduction de la taille du texte */
+  text-transform: uppercase;
+  color: var(--bleu-);
+  display: block;
+  text-align: center;
+  transition: color 0.3s ease;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 4px;
+  margin-left: 0px;
 }
 
 .menu__link:hover {
-  color: #0056b3;
+  text-decoration: underline;
 }
 
-/* Style pour l'image de fond en bas */
-.header__background-image {
+.menu-btn {
   position: relative;
-  margin-top: 30px;
-  max-width: 100%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-btn__bar,
+.menu-btn__bar::before,
+.menu-btn__bar::after {
+  content: "";
+  background: var(--bleu-);
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  border-radius: 20px;
+  left: 0;
+  z-index: 10;
+  transition: all 0.4s ease-in-out;
+}
+
+.menu-btn__bar::before {
+  top: -10px;
+}
+
+.menu-btn__bar::after {
+  top: 10px;
+}
+
+/* Technique pour transformer les 3 barres du bouton de menu en croix
+Ne pas oublier d'ajouter une transition plus haut pour l'animation */
+.menu-btn[aria-expanded="true"] .menu-btn__bar,
+.menu-btn[aria-expanded="true"] .menu-btn__bar::before,
+.menu-btn[aria-expanded="true"] .menu-btn__bar::after {
+  transform: rotate(135deg);
+}
+
+.menu-btn[aria-expanded="true"] .menu-btn__bar::before,
+.menu-btn[aria-expanded="true"] .menu-btn__bar::after {
+  transform: rotate(90deg);
+  top: 0;
+}
+
+.menu-btn__position {
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  list-style-type: none;
+  padding-top: 130px;
+  margin-left: 20px;
+}
+
+.menu__logo-container {
+  margin-bottom: 40px;
+}
+
+.menu__logo-container img {
+  width: 80px;
   height: auto;
 }
 
-/* Style responsif */
-@media (max-width: 768px) {
-  .menu__link {
-    font-size: 20px;
-  }
+.menu__logo-container {
+  margin-bottom: 40px;
+}
+
+.menu__item {
+  margin: 10px 0;
 }

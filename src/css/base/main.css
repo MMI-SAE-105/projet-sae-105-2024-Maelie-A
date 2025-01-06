@@ -113,7 +113,7 @@ input:focus, textarea:focus {
 
 /* Bouton d'envoi */
 button {
-    background-color: #1a2e42;
+    background-color: #fff;
     color: #fff;
     border: none;
     padding: 10px;
@@ -126,7 +126,7 @@ button {
 }
 
 button:hover {
-    background-color: #557a95;
+    background-color: white;
 }
 
 

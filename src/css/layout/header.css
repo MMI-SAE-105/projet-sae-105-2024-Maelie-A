@@ -2,14 +2,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--violet-);
+  background-color: var(ffffff);
   padding: 10px 20px;
   color: #fff;
 }
 
 .header__title {
   font-family: "Ultra", serif;
-  color: var(--rose-);
+  color: var(--bleu-);
   font-size: 24px;
   margin: 0;
 }
@@ -23,5 +23,5 @@
   font-family: "Ultra", serif;
   width: 500px;
   height: auto;
-  color: var(--rose-);
+  color: var(--bleu-);
 }

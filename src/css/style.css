@@ -7,17 +7,17 @@
 @import "utils/variables.css";
 
 /* Base */
-@import "base/main.css";
-@import "base/media.css";
+@import "/src/css/base/main.css";
+@import "/src/css/base/media.css";
 
 /* Layout */
-@import "layout/header.css";
-@import "layout/footer.css";
-@import "layout/carousel.css";
+@import "/src/css/layout/header.css";
+@import "/src/css/layout/footer.css";
+@import "/src/css/layout/carousel.css";
 
 /* Components */
-@import "components/menu.css";
-@import "components/hero.css";
+@import "/src/css/components/menu.css";
+@import "/src/css/components/hero.css";
 
 /* Typography */
 @import url("https://fonts.googleapis.com/css2?family=Gajraj+One&family=Orbitron:wght@400..900&family=Russo+One&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
