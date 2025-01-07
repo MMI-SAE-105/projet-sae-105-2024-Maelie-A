@@ -133,3 +133,134 @@ button {
 button:hover {
   background-color: white;
 }
+
+/* Style pour la frise chronologique visuelle avec cercles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h1, h2 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Conteneur de la frise */
+.evolution__timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Ligne centrale de la frise */
+.evolution__timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background: #0056b3;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+/* Style des événements */
+.evolution__event {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px 0;
+  padding: 20px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.evolution__event:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* Positionnement des événements */
+.evolution__event {
+  margin-left: calc(50% + 30px);
+}
+
+.evolution__event:nth-child(even) {
+  margin-left: auto;
+  margin-right: calc(50% + 30px);
+}
+
+.evolution__event img {
+  max-width: 120px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.evolution__event:nth-child(even) img {
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+/* Points des événements */
+.evolution__event::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background: #0056b3;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.evolution__year {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #002244;
+  margin-bottom: 10px;
+}
+
+.evolution__description {
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .evolution__timeline {
+    flex-direction: column;
+  }
+
+  .evolution__event {
+    margin: 20px auto;
+    flex-direction: column;
+    text-align: center;
+    max-width: 90%;
+  }
+
+  .evolution__event img {
+    margin: 0 0 10px;
+  }
+
+  .evolution__event:nth-child(even) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
