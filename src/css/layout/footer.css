@@ -1,14 +1,27 @@
 .footer__background {
-  background-image: url("/assets/img/footer.webp"); /* Remplacez par le chemin correct de l'image */
+  max-width: 1200px; /* Limite la largeur du footer à celle de votre site */
+  margin: 0 auto; /* Centre horizontalement */
+  background-image: url("/assets/img/footer.webp");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; /* Pas de répétition de l'image */
-  background-position: center; /* L'image est centrée */
-
-  padding: 40px 20px; /* Ajuste le padding autour du contenu */
-  color: #00274d; /* Couleur correspondant à l'image */
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  padding: 40px 20px;
+  color: #00274d;
   text-align: center;
 }
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Supprime les débordements horizontaux */
+}
+.footer {
+  width: 100%;
+  max-width: 1200px; /* Ajustez selon la largeur de votre site */
+  margin: 0 auto; /* Centre le footer */
+  overflow: hidden; /* Empêche les débordements */
+}
+
 
 .footer__slogan {
   font-family: "Gajraj One", sans-serif;
@@ -27,13 +40,22 @@
 .footer__social-icon img {
   width: 40px; /* Taille des icônes sociales */
   height: auto;
-color: #00274d;
+  color: #00274d;
 }
 
 .footer__etiquette {
-  
+  width: 200px; /* Taille du conteneur */
+  height: 200px;
+  margin: 0 auto; /* Centre horizontalement */
+  display: flex; /* Utilise flexbox pour centrer le contenu */
+  justify-content: center;
+  align-items: center;
 }
 
+.footer__etiquette img {
+  width: 60%; /* L'image remplit le conteneur */
+  height: auto; /* Conserve les proportions */
+}
 
 .footer__contact {
   margin-bottom: 20px;
