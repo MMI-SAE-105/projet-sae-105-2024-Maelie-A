@@ -39,6 +39,7 @@ main {
 h1 {
   font-size: 3em;
   font-weight: 700;
+  font-family: "Urbanist", sans-serif;
   
 }
 
@@ -110,20 +111,58 @@ button {
   transition: background-color 0.3s ease-in-out;
 }
 
+.button_envoyer {
+  background-color: var(--bleu-);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease-in-out;
+}
 button:hover {
   background-color: white;
 }
 
+.img_plante {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/assets/img/plogo.webp"); /* Chemin vers l'image */
+  background-size: cover; /* L'image couvre tout */
+  background-position: center; /* Centrage de l'image */
+  width: 10%; /* Largeur exacte de la fenêtre */
+  height: auto; /* Ajuste automatiquement la hauteur selon le contenu */
+  color: #fff;
+  box-sizing: border-box;
+
+}
+
+.hero__imagefrise {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   width: 1000%; /* Largeur exacte de la fenêtre */
+  height: 1000%; /* Ajuste automatiquement la hauteur selon le contenu */
+ 
+}
+
 /* Style pour la frise chronologique visuelle avec cercles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Russo one", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
+  
+
 }
 
 h1, h2 {
   text-align: center;
+  font-family: "Gajraj one ", sans-serif;
 
 }
 
@@ -248,3 +287,4 @@ h1, h2 {
 .noscroll{
   overflow: hidden;
 }
+
