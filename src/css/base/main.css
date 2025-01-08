@@ -39,7 +39,7 @@ main {
 h1 {
   font-size: 3em;
   font-weight: 700;
-  margin: 20px 0;
+  
 }
 
 /* Icône de l'image principale */
@@ -61,7 +61,7 @@ h2 span {
 }
 
 .subtitle {
-  margin: 10px 0 30px;
+  
   color: #555;
   font-size: 1em;
 }
@@ -124,7 +124,7 @@ body {
 
 h1, h2 {
   text-align: center;
-  margin: 10px 0;
+
 }
 
 /* Conteneur de la frise */

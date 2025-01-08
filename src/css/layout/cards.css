@@ -1,0 +1,64 @@
+/* Empêche les débordements de la carte */
+.card {
+  max-width: 80%; /* Limite la largeur pour s'adapter à l'écran */
+  margin: 20px auto; /* Centre la carte et ajoute un espace autour */
+  border: 2px solid #3c4c6e; /* Bordure de la carte */
+  border-radius: 12px; /* Coins arrondis */
+  background-color: #fff; /* Fond blanc */
+  overflow: hidden; /* Coupe le contenu qui dépasse */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Assure que l'image reste bien dans la carte */
+.card__image img {
+  width: 100%; /* L'image prend toute la largeur de son conteneur */
+  height: 20; /* Conserve les proportions */
+  display: block; /* Évite les marges internes non voulues */
+}
+
+/* Contenu de la carte */
+.card__content {
+  padding: 10px; /* Espacement interne */
+  text-align: center; /* Centrage du texte */
+}
+
+/* Titre de la carte */
+.card__title {
+  font-size: 1.5rem; /* Taille de police ajustée */
+  font-weight: bold;
+  color: #3c4c6e; /* Couleur assortie */
+  
+}
+
+/* Description de la carte */
+.card__description {
+  font-size: 0.9rem;
+  color: #666;
+  
+  line-height: 1.4;
+}
+
+/* Bouton dans la carte */
+.card__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #3c4c6e;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card__button:hover {
+  background-color: #2b3a57;
+}
+
+.card__button-icon {
+  font-size: 1rem;
+}

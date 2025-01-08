@@ -35,3 +35,7 @@ if (carousel) {
     carousel.scrollBy({ left: +scrollAmount, behavior: "smooth" });
   });
 }
+
+document.querySelector(".card__button").addEventListener("click", () => {
+  alert("Vous avez cliqué sur le bouton d'info !");
+});
