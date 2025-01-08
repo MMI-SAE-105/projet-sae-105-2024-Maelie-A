@@ -1,40 +1,75 @@
 .footer__background {
-  max-width: 1200px; /* Limite la largeur du footer à celle de votre site */
-  margin: 0 auto; /* Centre horizontalement */
-  background-image: url("/assets/img/footer.webp");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
-  padding: 40px 20px;
-  color: #00274d;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  inset: 0;
+  z-index: 1;
+  background-image: url("/assets/img/footer.webp"); /* Chemin vers l'image */
+  background-size: 500px; /* L'image couvre tout l'écran */
+  background-repeat: no-repeat; /* Pas de répétition de l'image */
+  background-position: center; /* L'image est centrée */
 }
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* Supprime les débordements horizontaux */
+  align-items: center;
 }
 .footer {
   width: 100%;
   max-width: 1200px; /* Ajustez selon la largeur de votre site */
   margin: 0 auto; /* Centre le footer */
   overflow: hidden; /* Empêche les débordements */
+  align-items: center;
 }
 
+.footer__content {
+  font-family: "Gajraj One", serif;
+  color: var(--bleu-);
+  font-size: 20px;
+  text-align: center;
+  transition: color 0.3s ease;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 4px;
+  margin-left: 0px;
+}
+
+.footer__jean-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/assets/img/footerj.webp"); /* Chemin vers l'image */
+  background-size: cover; /* L'image couvre tout l'écran */
+  background-position: center;
+  width: 100dvw;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.footer__jean {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  gap: 10px;
+
+  padding: 10px 20px;
+  color: #fff;
+  width: 80%;
+}
 
 .footer__slogan {
   font-family: "Gajraj One", sans-serif;
   font-size: 18px;
   color: #00274d;
-  margin-bottom: 20px;
+  align-items: center;
 }
 
 .footer__social-icons {
   display: flex;
   justify-content: center;
   gap: 20px;
-  margin-bottom: 20px;
 }
 
 .footer__social-icon img {
@@ -61,10 +96,12 @@ body {
   margin-bottom: 20px;
   font-family: "Urbanist", sans-serif;
   font-size: 16px;
+  align-items: center;
 }
 
 .footer__contact-item {
-  margin: 5px 0;
+  color: #00274d;
+  align-items: center;
 }
 
 .footer__address {
@@ -73,17 +110,16 @@ body {
   font-family: "Urbanist", sans-serif;
   font-size: 16px;
   padding: 15px;
-  margin: 20px auto;
   display: inline-block;
   border-radius: 5px;
   max-width: 300px;
+  align-items: center;
 }
 
 .footer__buttons {
   display: flex;
   justify-content: center;
   gap: 20px;
-  margin: 20px 0;
 }
 
 .footer__button {
@@ -105,6 +141,10 @@ body {
   font-family: "Urbanist", sans-serif;
   font-size: 14px;
   color: #555555;
-  margin-top: 20px;
   line-height: 1.5;
+}
+
+.footer p {
+  margin: 0;
+  text-align: center;
 }

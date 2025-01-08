@@ -1,24 +1,4 @@
-* {
-  margin: 0px;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Inter", "Urbanist", "Poppins", sans-serif; /* Ordre des polices */
-}
-div.footer__content {
-  margin: 38px;
 
-}
-body {
-  background-color: #fff;
-  color: #1a2e42;
-  font-family: "Urbanist", sans-serif; /* Choix global */
-}
-
-/* Titres principaux */
-h1,
-h2 {
-  font-family: "Playfair Display", "Russo One", serif;
-}
 
 /* Boutons */
 button {
@@ -263,4 +243,8 @@ h1, h2 {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.noscroll{
+  overflow: hidden;
 }

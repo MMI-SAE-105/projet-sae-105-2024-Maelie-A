@@ -1,11 +1,12 @@
 .hero {
-  text-align: center;
+  text-align: left;
   padding: 30px 10px;
-    color: var(--rose);
+  color: var(--bleu-);
 }
 
 .hero__title {
-  font-family: "Ultra", serif;
-  color: var(--rose);
+  font-family: "Gajraj one", serif;
+  color: var(--bleu-);
   font-size: 36px;
+  text-align: center;
 }

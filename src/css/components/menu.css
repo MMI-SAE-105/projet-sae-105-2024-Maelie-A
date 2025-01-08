@@ -20,6 +20,13 @@ p {
   text-align: left;
 }
 
+.hero__title {
+  font-family: "Gajraj One", serif;
+  color: var(--bleu-);
+  font-size: 24px;
+  margin: 0;
+}
+
 .header__logo-image-usa {
 position: absolute;
   top: 14px;
@@ -52,6 +59,8 @@ position: absolute;
   transform: translateX(0);
   visibility: visible;
 }
+
+
 
 .menu__link {
   font-family: "Gajraj One", serif;
@@ -126,10 +135,12 @@ Ne pas oublier d'ajouter une transition plus haut pour l'animation */
 .menu__list {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 5dvh;
   list-style-type: none;
-  padding-top: 130px;
-  margin-left: 20px;
+  max-width: 100dvw;
+  padding: 0 5dvw;
+  padding-top: 5dvh;
+
 }
 
 .menu__logo-container {
@@ -149,8 +160,4 @@ Ne pas oublier d'ajouter une transition plus haut pour l'animation */
 
 .menu__logo-container {
   margin-bottom: 40px;
-}
-
-.menu__item {
-  margin: 10px 0;
 }
