@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Film Gallery</title>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/img/logoblanc.webp"
+      sizes="192x192"
+    />
+    <script type="module" src="/src/js/script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo-container">
+        <a href="index.html">
+          <img
+            src="/assets/img/logo1.webp"
+            alt="#"
+            class="header__logo-image"
+          />
+        </a>
+      </div>
+      <div class="header__logo-container-usa">
+        <a href="/en/homepage.html">
+          <img
+            src="/assets/img/trad.svg"
+            alt="#"
+            class="header__logo-image-usa"
+          />
+        </a>
+      </div>
+
+      <button
+        class="header__menu-btn menu-btn"
+        aria-label="menu"
+        aria-expanded="false"
+        aria-controls="mainNav"
+      >
+        <span class="menu-btn__bar" aria-hidden="true"></span>
+      </button>
+      <nav class="menu" id="mainNav" aria-hidden="true">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="jeaneco.html">Eco-friendly Jeans</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="film.html">Fashion Reimagined</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="realisateur.html">Andrew Morgan</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="gallerie.html">Film Gallery</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="musique.html">Levi's 501 commercial soundtrack</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="livre.html">Biomimetics for Designers</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="autresprojets.html">Other Projects</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="contacts.html">Contact Us!</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <h1 class="hero__title">Film Gallery</h1>
+        <blockquote class="hero__quote">"Explore a selection of films that shed light on the challenges of sustainable fashion."</blockquote>
+      </section>
+
+      <div class="carousel" aria-labelledby="carousel-heading">
+        <div class="carousel__container" role="region" aria-live="polite">
+          <div class="carousel__item">
+            <img
+              id="img1"
+              src="/assets/img/riverblue.webp"
+              alt="Music Image 1"
+            />
+          </div>
+          <div class="carousel__item">
+            <img
+              id="img2"
+              src="/assets/img/thefuture.webp"
+              alt="Music Image 2"
+            />
+          </div>
+          <div class="carousel__item">
+            <img
+              id="img3"
+              src="/assets/img/fastfashion.webp"
+              alt="Music Image 3"
+            />
+          </div>
+        </div>
+        <div class="carousel__controls">
+          <button
+            class="carousel__button carousel__button--prev"
+            aria-label="Scroll left"
+          >
+            <img
+              src="/assets/img/flechedroite.svg"
+              alt="left arrow"
+            />
+          </button>
+          <button
+            class="carousel__button carousel__button--next"
+            aria-label="Scroll right"
+          >
+            <img
+              src="/assets/img/flechedroite.svg"
+              alt="right arrow"
+            />
+          </button>
+        </div>
+      </div>
+      <p class="hero__date">Written on October 20, 2024, at 5:00 PM</p>
+
+      <!-- Section: Film Gallery -->
+      <section class="films" id="films">
+        <article class="films__item">
+          <blockquote class="films__quote">"Our rivers are dying. But we have the power to save them."</blockquote>
+          <h2 class="ecoresponsable__title">River Blue</h2>
+          <p class="films__director">Directed by David McIlvride and Roger Williams</p>
+          <p class="films__description">This documentary explores how the denim industry and its chemical processes pollute rivers worldwide. It highlights the environmental damage caused by fashion and proposes solutions to create clothing without destroying aquatic ecosystems.</p>
+        </article>
+
+        <article class="films__item">
+          <blockquote class="films__quote">"Every garment we wear has a hidden cost. But who really pays the price?"</blockquote>
+          <video src="https://maelie-addario.fr/videos/the_true_cost.mp4" class="icon img" controls ></video>
+          <h2 class="ecoresponsable__title">The True Cost</h2>
+          <p class="films__director">Directed by Andrew Morgan</p>
+          <p class="films__description">This impactful film reveals the true human and environmental costs of fast fashion. It examines the working conditions of workers in developing countries and the industry's destructive impact on the environment while proposing solutions to change our consumption habits.</p>
+        </article>
+
+        <article class="films__item">
+          <blockquote class="films__quote">"Less is better. And it might be the key to saving our planet."</blockquote>
+          <img
+            src="/assets/img/minimalism.webp"
+            alt="Sustainable Jeans"
+            class="hero__image"
+          />
+          <h2 class="ecoresponsable__title">Minimalism: A Documentary About the Important Things</h2>
+          <p class="films__director">Directed by Matt D'Avella</p>
+          <p class="films__description">This film, though broader than fashion, delves into the minimalist philosophy and how it can positively influence our consumption choices, including in fashion. It shows how reducing consumption can be a response to the excesses of fast fashion.</p>
+        </article>
+
+        <article class="films__item">
+          <blockquote class="films__quote">"Less is better. And it might be the key to saving our planet."</blockquote>
+          <img
+            src="/assets/img/thefuture.webp"
+            alt="Sustainable Jeans"
+            class="hero__image"
+          />
+          <h2 class="ecoresponsable__title">A Brief History of the Future</h2>
+          <p class="films__director">Directed by Matt D'Avella</p>
+          <p class="films__description">This film, though broader than fashion, delves into the minimalist philosophy and how it can positively influence our consumption choices, including in fashion. It shows how reducing consumption can be a response to the excesses of fast fashion.</p>
+        </article>
+      </section>
+
+      <!-- Section: How to Watch -->
+      <section class="comment-regarder" id="comment-regarder">
+        <h2 class="ecoresponsable__title">How to Watch?</h2>
+        <p class="comment-regarder__text">Some of these films are available for streaming on platforms like Netflix, Amazon Prime Video, or YouTube.</p>
+        <ul class="comment-regarder__list">
+          <li class="comment-regarder__item">Fashion Reimagined – Available on Netflix</li>
+          <li class="comment-regarder__item">The True Cost – Available on Amazon Prime Video</li>
+          <li class="comment-regarder__item">RiverBlue – Available on YouTube</li>
+          <li class="comment-regarder__item">A Brief History of the Future – Available on Vimeo</li>
+          <li class="comment-regarder__item">Slowing Down Fast Fashion – Available on BBC iPlayer</li>
+          <li class="comment-regarder__item">Minimalism – Available on Netflix</li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__background">
+        <div class="footer__content">
+          <div class="footer__jean-container">
+            <div class="footer__jean">
+              <p class="footer__slogan">"Reinventing jeans for a greener future."</p>
+              <div class="footer__social-icons">
+                <a href="#" class="footer__social-icon"><img src="/assets/img/ig.svg" alt="Instagram"></a>
+                <a href="#" class="footer__social-icon"><img src="/assets/img/pinterest.svg" alt="Pinterest"></a>
+                <a href="#" class="footer__social-icon"><img src="/assets/img/tiktok.svg" alt="TikTok"></a>
+                <a href="#" class="footer__social-icon"><img src="/assets/img/youtube.svg" alt="YouTube"></a>
+              </div>
+
+              <div class="footer__contact">
+                <p class="footer__contact-item">Email: <a href="mailto:eco@denim.com">eco@denim.com</a></p>
+                <p class="footer__contact-item">Phone: +33 1 28 48 68 88</p>
+              </div>
+              <div class="footer__address">
+                <p>EcoDenim<br>123 Ecology Street, 75001 Paris, France</p>
+              </div>
+
+              <div class="footer__etiquette">
+                <a class="footer__etiquette"><img src="/assets/img/etiquette.webp" alt="Instagram"></a>
+              </div>
+
+              <div class="footer__buttons">
+                <a href="/fr/apropos.html" class="footer__button">About Us</a>
+                <a href="/fr/glossaire.html" class="footer__button">Glossary</a>
+              </div>
+              <div class="footer__credits">
+                <p>ADDARIO Maëlie MMI-1 A2</p>
+                <p>© 2024 EcoDenim - Project created in 2024 as part of a pedagogical exercise at the MMi department of Montbéliard</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
