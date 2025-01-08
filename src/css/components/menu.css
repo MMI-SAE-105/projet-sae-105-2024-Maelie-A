@@ -1,18 +1,23 @@
 h1 {
   font-family: "Gajraj One", serif;
+  padding: 20px;
 }
 
 h2 {
   font-family: "Russo One", serif;
+  padding: 20px;
 }
 
 h3 {
   font-family: "Orbitron", serif;
+  padding: 20px;
 }
 
 p {
   font-family: "Urbanist", sans-serif;
   font-weight: 400;
+  padding: 20px;
+  text-align: left;
 }
 
 .header__logo-image-usa {
